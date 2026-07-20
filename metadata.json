@@ -1,0 +1,6 @@
+{
+  "name": "ShotByAkim Photography and Videography",
+  "description": "Futuristic Black Neon luxury website for ShotByAkim Photography and Videography in Boiling Springs, SC.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

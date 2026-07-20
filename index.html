@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>ShotByAkim Photography & Videography | Boiling Springs, SC</title>
+  <meta name="description" content="ShotByAkim is a premium luxury photography and videography studio in Boiling Springs, SC. Specializing in wedding, engagement, commercial, real estate, and portrait media with a futuristic, black neon cinematic aesthetic.">
+  <meta name="keywords" content="Wedding Photographer in Boiling Springs SC, Professional Videography in Boiling Springs SC, Event Photography in Boiling Springs SC, Real Estate Photography Boiling Springs, Portrait Photographer SC, Drone Photography Boiling Springs SC, ShotByAkim">
+  <link rel="canonical" href="https://shotbyakimpav.wixsite.com/photographer">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shotbyakimpav.wixsite.com/photographer">
+  <meta property="og:title" content="ShotByAkim Photography & Videography | Boiling Springs, SC">
+  <meta property="og:description" content="Cinematic, high-end photography and professional videography services in Boiling Springs, SC. Capturing life's luxury moments with a futuristic Black Neon aesthetic.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1200&auto=format&fit=crop">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://shotbyakimpav.wixsite.com/photographer">
+  <meta property="twitter:title" content="ShotByAkim Photography & Videography | Boiling Springs, SC">
+  <meta property="twitter:description" content="Cinematic, high-end photography and professional videography services in Boiling Springs, SC. Capturing life's luxury moments with a futuristic Black Neon aesthetic.">
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1200&auto=format&fit=crop">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-black: #000000;
+      --color-dark: #070708;
+      --color-charcoal: #121214;
+      --color-glass: rgba(10, 10, 12, 0.7);
+      --color-glass-border: rgba(255, 255, 255, 0.08);
+      --color-cyan: #00f0ff;
+      --color-purple: #bd00ff;
+      --color-blue: #0072ff;
+      --color-white: #ffffff;
+      --font-display: 'Space Grotesk', sans-serif;
+      --font-sans: 'Inter', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --glow-cyan: 0 0 15px rgba(0, 240, 255, 0.4);
+      --glow-purple: 0 0 15px rgba(189, 0, 255, 0.4);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: var(--font-sans);
+      background-color: var(--color-black);
+      color: var(--color-white);
+      overflow-x: hidden;
+    }
+
+    body {
+      background-color: var(--color-black);
+      position: relative;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--color-black);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--color-charcoal);
+      border: 2px solid var(--color-black);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--color-cyan);
+    }
+
+    /* Background Particle Canvas */
+    #particles-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    /* Glassmorphism Navigation */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-glass-border);
+      transition: all 0.3s ease;
+    }
+    .navbar.scrolled {
+      background: rgba(7, 7, 8, 0.9);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8), 0 1px 10px rgba(0, 240, 255, 0.1);
+    }
+    .navbar-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      gap: 0.75rem;
+    }
+    .navbar-logo img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+    }
+    .logo-text {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--color-white);
+      letter-spacing: 1px;
+    }
+    .logo-text span {
+      background: linear-gradient(90deg, var(--color-cyan), var(--color-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    .nav-link {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 0.25rem 0;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: var(--color-cyan);
+      text-shadow: var(--glow-cyan);
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--color-cyan), var(--color-purple));
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after, .nav-link.active::after {
+      width: 100%;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+      z-index: 1010;
+    }
+    .hamburger .bar {
+      width: 25px;
+      height: 2px;
+      background-color: var(--color-white);
+      transition: all 0.3s ease;
+    }
+
+    /* Mobile Nav Active states */
+    @media (max-width: 900px) {
+      .hamburger {
+        display: flex;
+      }
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        background: rgba(7, 7, 8, 0.95);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        border-left: 1px solid var(--color-glass-border);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.9);
+      }
+      .nav-links.active {
+        right: 0;
+      }
+      .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        background-color: var(--color-cyan);
+      }
+      .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+        background-color: var(--color-cyan);
+      }
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      background: radial-gradient(circle at center, rgba(189, 0, 255, 0.15) 0%, rgba(0, 0, 0, 1) 100%),
+                  url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&q=80&w=1920');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      overflow: hidden;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.85) 100%);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+      background: var(--color-glass);
+      backdrop-filter: blur(16px);
+      padding: 5rem 2.5rem;
+      border-radius: 0;
+      border-left: none;
+      border-right: none;
+      border-top: 1px solid var(--color-glass-border);
+      border-bottom: 1px solid var(--color-glass-border);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+      transform: translateY(30px);
+      opacity: 0;
+      animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards 0.2s;
+    }
+    .camera-lens-wrapper {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .camera-lens-aperture {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 2px dashed var(--color-cyan);
+      border-radius: 50%;
+      animation: rotateAperture 20s linear infinite;
+      box-shadow: var(--glow-cyan);
+    }
+    .camera-lens-core {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #1a1a1f 30%, #000 100%);
+      border: 2px solid var(--color-purple);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--glow-purple);
+    }
+    .camera-lens-core i {
+      color: var(--color-cyan);
+      filter: drop-shadow(var(--glow-cyan));
+    }
+    .hero-subtitle {
+      font-family: var(--font-mono);
+      color: var(--color-cyan);
+      font-size: 0.85rem;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      display: inline-block;
+      text-shadow: var(--glow-cyan);
+    }
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      letter-spacing: -1px;
+    }
+    .hero-title span {
+      background: linear-gradient(90deg, var(--color-cyan) 30%, var(--color-purple) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-desc {
+      font-size: 1.05rem;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    /* Premium Button Styles */
+    .btn {
+      position: relative;
+      padding: 0.9rem 2rem;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      overflow: hidden;
+    }
+    .btn-primary {
+      background: linear-gradient(90deg, var(--color-cyan), var(--color-blue));
+      color: var(--color-black);
+      border: none;
+      box-shadow: var(--glow-cyan);
+    }
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 25px rgba(0, 240, 255, 0.7);
+    }
+    .btn-secondary {
+      background: rgba(255,255,255,0.05);
+      color: var(--color-white);
+      border: 1px solid var(--color-glass-border);
+      backdrop-filter: blur(8px);
+    }
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: var(--color-purple);
+      box-shadow: var(--glow-purple);
+      transform: translateY(-3px);
+    }
+    .scroll-indicator {
+      position: absolute;
+      bottom: 2rem;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      opacity: 0.7;
+      animation: bounce 2s infinite;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .scroll-indicator span {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--color-white);
+    }
+    .scroll-indicator i {
+      color: var(--color-cyan);
+    }
+
+    /* Core Sections Container */
+    .section {
+      padding: 7rem 2rem;
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .section-subtitle {
+      font-family: var(--font-mono);
+      color: var(--color-purple);
+      font-size: 0.8rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+      display: block;
+      text-shadow: var(--glow-purple);
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .section-title span {
+      background: linear-gradient(90deg, var(--color-cyan), var(--color-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Reveal On Scroll Utility */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Grid Layouts */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    @media (max-width: 850px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
+    /* About Preview Section */
+    .about-img-container {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+      border: 1px solid var(--color-glass-border);
+    }
+    .about-img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
+    .about-img-container:hover img {
+      transform: scale(1.05);
+    }
+    .about-img-glow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+      pointer-events: none;
+    }
+    .about-badge {
+      position: absolute;
+      bottom: 2rem;
+      left: 2rem;
+      background: var(--color-glass);
+      backdrop-filter: blur(12px);
+      padding: 0.75rem 1.5rem;
+      border-radius: 12px;
+      border: 1px solid var(--color-cyan);
+      box-shadow: var(--glow-cyan);
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+    }
+    .about-text h3 {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.3;
+    }
+    .about-text p {
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Services Cards Grid */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+    .service-card {
+      background: var(--color-glass);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      border: 1px solid var(--color-glass-border);
+      padding: 2.5rem;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--color-cyan), var(--color-purple));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      border-color: rgba(0, 240, 255, 0.3);
+      box-shadow: 0 15px 35px rgba(0, 240, 255, 0.15);
+    }
+    .service-card:hover::before {
+      opacity: 1;
+    }
+    .service-icon-box {
+      width: 60px;
+      height: 60px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--color-glass-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+      transition: all 0.3s ease;
+    }
+    .service-card:hover .service-icon-box {
+      background: rgba(0, 240, 255, 0.1);
+      border-color: var(--color-cyan);
+      box-shadow: var(--glow-cyan);
+      color: var(--color-cyan);
+    }
+    .service-icon-box i {
+      color: var(--color-cyan);
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover .service-icon-box i {
+      transform: scale(1.1) rotate(5deg);
+    }
+    .service-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .service-card p {
+      color: rgba(255,255,255,0.7);
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
+    .service-features {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+    .service-features li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 0.5rem;
+    }
+    .service-features li i {
+      color: var(--color-cyan);
+      width: 16px;
+      height: 16px;
+    }
+
+    /* Portfolio Category Tabs & Grid */
+    .portfolio-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+    .portfolio-tab {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--color-glass-border);
+      color: rgba(255,255,255,0.7);
+      padding: 0.6rem 1.5rem;
+      border-radius: 30px;
+      cursor: pointer;
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+    .portfolio-tab:hover, .portfolio-tab.active {
+      background: var(--color-cyan);
+      color: var(--color-black);
+      border-color: var(--color-cyan);
+      box-shadow: var(--glow-cyan);
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 1.5rem;
+    }
+    .portfolio-item {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 3/2;
+      border: 1px solid var(--color-glass-border);
+      cursor: pointer;
+      transition: all 0.4s ease;
+    }
+    .portfolio-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .portfolio-item:hover img {
+      transform: scale(1.08);
+    }
+    .portfolio-item-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(0,0,0,0.1) 40%, rgba(7, 7, 8, 0.95) 100%);
+      opacity: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.5rem;
+      transition: opacity 0.4s ease;
+    }
+    .portfolio-item:hover .portfolio-item-overlay {
+      opacity: 1;
+    }
+    .portfolio-item-category {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--color-cyan);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 0.25rem;
+    }
+    .portfolio-item-title {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--color-white);
+    }
+
+    /* Videography Section */
+    .videography-wrapper {
+      background: radial-gradient(circle at 10% 20%, rgba(189,0,255,0.08) 0%, rgba(0,0,0,0) 50%);
+      border-radius: 30px;
+      padding: 4rem 3rem;
+      border: 1px solid var(--color-glass-border);
+      box-shadow: inset 0 0 40px rgba(189,0,255,0.05);
+    }
+    .video-showcase-container {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      aspect-ratio: 16/9;
+      border: 1px solid var(--color-glass-border);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.9);
+      margin-top: 2rem;
+    }
+    .video-thumbnail {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.9);
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .video-showcase-container:hover .video-thumbnail {
+      transform: scale(1.05);
+    }
+    .video-play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--color-glass);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--color-purple);
+      color: var(--color-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: var(--glow-purple);
+      text-decoration: none;
+    }
+    .video-play-btn:hover {
+      background: var(--color-purple);
+      transform: translate(-50%, -50%) scale(1.1);
+      box-shadow: 0 0 30px rgba(189, 0, 255, 0.8);
+      color: var(--color-black);
+    }
+    .video-text-overlay {
+      position: absolute;
+      bottom: 2rem;
+      left: 2rem;
+      right: 2rem;
+    }
+    .video-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+    }
+    .video-desc {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.8);
+      text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    }
+
+    /* Testimonials Section */
+    .testimonial-carousel {
+      position: relative;
+      max-width: 850px;
+      margin: 0 auto;
+      overflow: hidden;
+      min-height: 280px;
+    }
+    .testimonial-slide {
+      background: var(--color-glass);
+      backdrop-filter: blur(16px);
+      padding: 3rem;
+      border-radius: 24px;
+      border: 1px solid var(--color-glass-border);
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(100px);
+      transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .testimonial-slide.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+      position: relative;
+    }
+    .testimonial-stars {
+      display: flex;
+      justify-content: center;
+      gap: 0.25rem;
+      margin-bottom: 1.5rem;
+      color: #ffb700;
+      filter: drop-shadow(0 0 5px rgba(255,183,0,0.4));
+    }
+    .testimonial-quote {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      font-style: italic;
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 2rem;
+    }
+    .testimonial-profile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .testimonial-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid var(--color-cyan);
+      box-shadow: var(--glow-cyan);
+      object-fit: cover;
+    }
+    .testimonial-info h4 {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-white);
+    }
+    .testimonial-info p {
+      font-size: 0.8rem;
+      color: var(--color-cyan);
+      font-family: var(--font-mono);
+    }
+    .testimonial-dots {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 2rem;
+    }
+    .testimonial-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.2);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .testimonial-dot.active {
+      background: var(--color-cyan);
+      box-shadow: var(--glow-cyan);
+      transform: scale(1.2);
+    }
+
+    /* Why Choose Us & Business Info (Bento-Grid) */
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .bento-item {
+      background: var(--color-glass);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      border: 1px solid var(--color-glass-border);
+      padding: 2.5rem;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .bento-item:hover {
+      transform: translateY(-5px);
+      border-color: rgba(189, 0, 255, 0.3);
+      box-shadow: 0 10px 30px rgba(189, 0, 255, 0.1);
+    }
+    .bento-item-large {
+      grid-column: span 2;
+    }
+    .bento-item-full {
+      grid-column: span 3;
+    }
+    .bento-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .bento-title i {
+      color: var(--color-cyan);
+    }
+    .bento-desc {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .choose-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .choose-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.8);
+    }
+    .choose-item i {
+      color: var(--color-cyan);
+    }
+
+    @media (max-width: 850px) {
+      .bento-grid {
+        grid-template-columns: 1fr;
+      }
+      .bento-item-large, .bento-item-full {
+        grid-column: span 1;
+      }
+    }
+
+    /* Business Hours Section */
+    .hours-card {
+      background: linear-gradient(135deg, rgba(7, 7, 8, 0.9) 0%, rgba(18, 18, 20, 0.9) 100%);
+      border: 1px solid var(--color-glass-border);
+      border-radius: 20px;
+      padding: 2.5rem;
+    }
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      padding: 0.8rem 0;
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+    }
+    .hours-row:last-child {
+      border: none;
+    }
+    .hours-day {
+      color: rgba(255,255,255,0.8);
+    }
+    .hours-time {
+      color: var(--color-cyan);
+      font-weight: 500;
+    }
+
+    /* Call To Action Section */
+    .cta-banner {
+      background: radial-gradient(circle at 80% 50%, rgba(0, 240, 255, 0.15) 0%, rgba(0,0,0,1) 80%),
+                  url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1920&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      border-radius: 24px;
+      padding: 5rem 3rem;
+      border: 1px solid var(--color-glass-border);
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.8);
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-banner-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 1;
+    }
+    .cta-banner-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .cta-banner h2 {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+    .cta-banner p {
+      color: rgba(255,255,255,0.85);
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Premium Footer */
+    .footer {
+      background: #040405;
+      border-top: 1px solid var(--color-glass-border);
+      padding: 5rem 2rem 2rem;
+      position: relative;
+      z-index: 10;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+      gap: 3rem;
+    }
+    @media (max-width: 950px) {
+      .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+    }
+    @media (max-width: 600px) {
+      .footer-container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+    .footer-column h4 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: var(--color-white);
+      letter-spacing: 0.5px;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+    .footer-column h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: var(--color-cyan);
+    }
+    .footer-desc {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    .footer-socials {
+      display: flex;
+      gap: 1rem;
+    }
+    .footer-social-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--color-glass-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .footer-social-icon:hover {
+      background: rgba(0, 240, 255, 0.1);
+      border-color: var(--color-cyan);
+      color: var(--color-cyan);
+      box-shadow: var(--glow-cyan);
+      transform: translateY(-3px);
+    }
+    .footer-links {
+      list-style: none;
+    }
+    .footer-link-item {
+      margin-bottom: 0.75rem;
+    }
+    .footer-link {
+      text-decoration: none;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .footer-link:hover {
+      color: var(--color-cyan);
+      text-shadow: var(--glow-cyan);
+      padding-left: 5px;
+    }
+    .footer-info {
+      list-style: none;
+    }
+    .footer-info-item {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.7);
+    }
+    .footer-info-item i {
+      color: var(--color-cyan);
+      flex-shrink: 0;
+    }
+    .footer-info-item a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .footer-info-item a:hover {
+      color: var(--color-cyan);
+    }
+    .footer-map-container {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--color-glass-border);
+      height: 160px;
+      position: relative;
+    }
+    .footer-map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      filter: grayscale(100%) invert(90%) contrast(120%);
+    }
+
+    /* Sub-footer copyright */
+    .sub-footer {
+      max-width: 1200px;
+      margin: 4rem auto 0;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+    }
+    .sub-footer a {
+      color: var(--color-cyan);
+      text-decoration: none;
+      font-weight: 500;
+      transition: text-shadow 0.3s ease;
+    }
+    .sub-footer a:hover {
+      text-shadow: var(--glow-cyan);
+    }
+
+    /* Keyframes */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes rotateAperture {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-8px);
+      }
+      60% {
+        transform: translateY(-4px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Particle Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navigation Header -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="./index.html" class="navbar-logo" id="nav-logo-link">
+        <img src="https://static.wixstatic.com/media/10bc50_5043d7c988c6460aad67f80406d2de85~mv2.png/v1/fill/w_234,h_234,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/gemini_generated_image_6nzisa6nzisa6nzi-removebg-preview_png_w%3D254%26h%3D254%26allow_lossy%3D1.png" alt="ShotByAkim Photography Logo">
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="./index.html" class="nav-link active">Home</a>
+        <a href="./about.html" class="nav-link">About</a>
+        <a href="./services.html" class="nav-link">Services</a>
+        <a href="./contact.html" class="nav-link">Contact Us</a>
+      </nav>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content" id="hero-content-card">
+      <div class="camera-lens-wrapper">
+        <div class="camera-lens-aperture"></div>
+        <div class="camera-lens-core">
+          <i data-lucide="camera" style="width:32px; height:32px;"></i>
+        </div>
+      </div>
+      <span class="hero-subtitle">Visual Brilliance & Precision</span>
+      <h1 class="hero-title">CHASING LIGHT.<br>CAPTURING <span>LEGACIES</span>.</h1>
+      <p class="hero-desc">ShotByAkim delivers premium, high-contrast, cinematic photography and professional videography services in Boiling Springs, SC and surrounding areas. We craft immersive visual art designed to tell your custom story with luxury and distinction.</p>
+      <div class="hero-ctas">
+        <a href="./services.html" class="btn btn-primary" id="hero-cta-primary">
+          Explore Services <i data-lucide="sparkles"></i>
+        </a>
+        <a href="./contact.html" class="btn btn-secondary" id="hero-cta-secondary">
+          Get In Touch <i data-lucide="phone"></i>
+        </a>
+      </div>
+    </div>
+    <a href="#about-preview" class="scroll-indicator" id="scroll-indicator-link">
+      <span>Scroll Down</span>
+      <i data-lucide="chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- About Preview Section -->
+  <section class="section" id="about-preview">
+    <div class="grid-2">
+      <div class="about-img-container reveal" id="about-preview-image-box">
+        <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&q=80&w=1000" alt="Professional Photographer capturing wedding moment">
+        <div class="about-img-glow"></div>
+        <div class="about-badge" id="about-experience-badge">Akim Alston | Founder</div>
+      </div>
+      <div class="about-text reveal" id="about-preview-text-box">
+        <span class="section-subtitle">THE VISIONARY LENS</span>
+        <h2 class="section-title">Crafting Luxury Visuals In <span>Boiling Springs</span></h2>
+        <div style="height:1.5rem;"></div>
+        <h3>Creative Artistry Meets Technical Precision</h3>
+        <p>ShotByAkim, founded by lead visual artist Akim Alston, represents the gold standard in premium photography and videography. We reject the flat, uninspired templates of traditional local media. Instead, we treat every frame as a unique work of art, painting with cinematic high-contrast lighting and vivid dark neon details to capture the raw, breathtaking essence of your legacy.</p>
+        <p>From luxury wedding documentaries to elite high-fashion portraiture, our Boiling Springs, SC studio integrates state-of-the-art cinema optics with fluid artistic intuition. We do not just document moments—we craft legacy visual masterpieces designed to stand as a testament of luxury, elegance, and distinction.</p>
+        <div style="height:1rem;"></div>
+        <a href="./about.html" class="btn btn-secondary" id="about-preview-btn">
+          Read Our Story <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Photography / Categories -->
+  <section class="section" id="portfolio-showcase" style="background: radial-gradient(circle at right, rgba(0, 240, 255, 0.05) 0%, rgba(0,0,0,0) 60%);">
+    <div class="section-header reveal" id="portfolio-header">
+      <span class="section-subtitle">OUR MASTERWORKS</span>
+      <h2 class="section-title">Interactive <span>Media Showcase</span></h2>
+    </div>
+
+    <!-- Category Tabs -->
+    <div class="portfolio-tabs reveal" id="portfolio-tabs-container">
+      <div class="portfolio-tab active" data-filter="all">All Masterworks</div>
+      <div class="portfolio-tab" data-filter="weddings">Weddings & Couples</div>
+      <div class="portfolio-tab" data-filter="portraits">Portraits & Lifestyle</div>
+      <div class="portfolio-tab" data-filter="commercial">Commercial & Drone</div>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="portfolio-grid reveal" id="portfolio-items-grid">
+      <!-- Item 1: Wedding -->
+      <div class="portfolio-item" data-category="weddings" id="portfolio-item-1">
+        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1000&auto=format&fit=crop" alt="Timeless Wedding Photography in Boiling Springs, SC">
+        <div class="portfolio-item-overlay">
+          <span class="portfolio-item-category">Weddings & Couples</span>
+          <h4 class="portfolio-item-title">Ethereal Forest Ceremony</h4>
+        </div>
+      </div>
+      
+      <!-- Item 2: Portrait -->
+      <div class="portfolio-item" data-category="portraits" id="portfolio-item-2">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop" alt="Luxury Portrait Photography in Boiling Springs, SC">
+        <div class="portfolio-item-overlay">
+          <span class="portfolio-item-category">Portraits & Fashion</span>
+          <h4 class="portfolio-item-title">High-Contrast Editorial Portrait</h4>
+        </div>
+      </div>
+
+      <!-- Item 3: Commercial -->
+      <div class="portfolio-item" data-category="commercial" id="portfolio-item-3">
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1000&auto=format&fit=crop" alt="Drone Real Estate Photography in Boiling Springs, SC">
+        <div class="portfolio-item-overlay">
+          <span class="portfolio-item-category">Commercial & Drone</span>
+          <h4 class="portfolio-item-title">Aerial Estate Overlook</h4>
+        </div>
+      </div>
+
+      <!-- Item 4: Wedding -->
+      <div class="portfolio-item" data-category="weddings" id="portfolio-item-4">
+        <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=1000&auto=format&fit=crop" alt="Engagement Photographer in Boiling Springs, SC">
+        <div class="portfolio-item-overlay">
+          <span class="portfolio-item-category">Weddings & Couples</span>
+          <h4 class="portfolio-item-title">Golden Hour Sunset Embrace</h4>
+        </div>
+      </div>
+
+      <!-- Item 5: Portrait -->
+      <div class="portfolio-item" data-category="portraits" id="portfolio-item-5">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop" alt="Creative Portrait in Boiling Springs SC">
+        <div class="portfolio-item-overlay">
+          <span class="portfolio-item-category">Portraits & Lifestyle</span>
+          <h4 class="portfolio-item-title">Urban Neon Twilight Session</h4>
+        </div>
+      </div>
+
+      <!-- Item 6: Commercial -->
+      <div class="portfolio-item" data-category="commercial" id="portfolio-item-6">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop" alt="Corporate Branding Media in Boiling Springs, SC">
+        <div class="portfolio-item-overlay">
+          <span class="portfolio-item-category">Commercial & Corporate</span>
+          <h4 class="portfolio-item-title">Modern Corporate Branding Reels</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Videography Highlight Section -->
+  <section class="section" id="featured-videography">
+    <div class="videography-wrapper reveal" id="video-wrapper-card">
+      <div class="grid-2">
+        <div>
+          <span class="section-subtitle">CINEMATIC VIDEO PRODUCTION</span>
+          <h2 class="section-title">Moving Legacies, <span>Told Beautifully</span></h2>
+          <div style="height:1.5rem;"></div>
+          <p>We create professional videography designed for deep immersion. Our motion captures feature breathtaking cinematic dynamic ranges, advanced sound design, and master-level post-production color grading.</p>
+          <p>From high-end promotional reels to luxury wedding films, we encapsulate every smile, tear, and breakthrough moment. Look at our showcase on Google Business to see why clients rate us five stars.</p>
+          <div style="height:1.5rem;"></div>
+          <a href="https://maps.app.goo.gl/a8uaZ5cPXz3U4XRbA" target="_blank" class="btn btn-primary" id="video-explore-btn">
+            Learn More <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+        <div class="video-showcase-container" id="video-container-box">
+          <img class="video-thumbnail" img src="https://i.ibb.co/bjbhWqpy/Wedding-DJ-Services.jpg" alt="Wedding DJ Services" border="0"> alt="Professional Cinematography capturing video footage">
+          <div class="video-text-overlay">
+            <h4 class="video-title">ShotByAkim Signature Portraiture</h4>
+            <p class="video-desc">Boiling Springs, SC luxury capture</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="section" id="services-overview">
+    <div class="section-header reveal" id="services-header">
+      <span class="section-subtitle">OUR SPECIALTIES</span>
+      <h2 class="section-title">Premium <span>Creative Services</span></h2>
+    </div>
+
+    <div class="grid-3">
+      <!-- Service 1 -->
+      <div class="service-card reveal" id="srv-card-1">
+        <div>
+          <div class="service-icon-box">
+            <i data-lucide="heart" style="width:28px; height:28px;"></i>
+          </div>
+          <h3>Wedding Photography</h3>
+          <p>Luxurious, emotionally rich visual storytelling mapping your special day. Designed for heirloom prints and digital permanence.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check"></i> All-Day Coverage</li>
+            <li><i data-lucide="check"></i> Advanced Master Editing</li>
+            <li><i data-lucide="check"></i> Luxury Layflat Album</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card reveal" id="srv-card-2">
+        <div>
+          <div class="service-icon-box">
+            <i data-lucide="clapperboard" style="width:28px; height:28px;"></i>
+          </div>
+          <h3>Wedding Videography</h3>
+          <p>Breathtaking cinematic wedding films featuring emotional voice-overs, perfect soundtrack pacing, and 4K output.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check"></i> Highlight Film + Raw footage</li>
+            <li><i data-lucide="check"></i> Multi-Camera setup</li>
+            <li><i data-lucide="check"></i> High-contrast color grade</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card reveal" id="srv-card-3">
+        <div>
+          <div class="service-icon-box">
+            <i data-lucide="camera" style="width:28px; height:28px;"></i>
+          </div>
+          <h3>Portrait & Lifestyle</h3>
+          <p>Editorial fashion sessions, senior graduations, and luxury family portraiture in the beautiful landscapes of Boiling Springs, SC.</p>
+          <ul class="service-features">
+            <li><i data-lucide="check"></i> Custom Location Guides</li>
+            <li><i data-lucide="check"></i> Complete Wardrobe consultations</li>
+            <li><i data-lucide="check"></i> Ultra-Fast Turnaround</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 4rem;" class="reveal" id="services-all-cta">
+      <a href="./services.html" class="btn btn-primary" id="all-services-btn">
+        View All 15 Services <i data-lucide="arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Bento Section: Why Choose Us & Info -->
+  <section class="section" id="why-choose-us">
+    <div class="section-header reveal" id="why-choose-header">
+      <span class="section-subtitle">THE SHOTBYAKIM DIFFERENCE</span>
+      <h2 class="section-title">Why Clients <span>Trust Our Lens</span></h2>
+    </div>
+
+    <div class="bento-grid">
+      <!-- Bento Item 1: Large Core Vision -->
+      <div class="bento-item bento-item-large reveal" id="bento-1">
+        <h3 class="bento-title"><i data-lucide="award"></i> Luxury Visual Standards</h3>
+        <p class="bento-desc">We represent Boiling Springs, SC with high-contrast, black neon visual luxury. Every production integrates cinematic storytelling with deep detail optimization to make sure your pictures stand out immediately.</p>
+        <div class="choose-grid">
+          <div class="choose-item"><i data-lucide="check-circle-2"></i> Premium Quality Media</div>
+          <div class="choose-item"><i data-lucide="check-circle-2"></i> Fast 10-Day Turnaround</div>
+          <div class="choose-item"><i data-lucide="check-circle-2"></i> Experienced Artistry</div>
+          <div class="choose-item"><i data-lucide="check-circle-2"></i> Advanced Cinema Equipment</div>
+        </div>
+      </div>
+
+      <!-- Bento Item 2: Business Hours -->
+      <div class="bento-item hours-card reveal" id="bento-2">
+        <h3 class="bento-title"><i data-lucide="clock"></i> Business Hours</h3>
+        <div class="hours-row">
+          <span class="hours-day">Monday - Sunday</span>
+          <span class="hours-time">8:00 AM - 12:00 AM</span>
+        </div>
+        <p class="bento-desc" style="margin-top:1rem; font-size:0.85rem; color:rgba(255,255,255,0.5);">Available seven days a week for scheduled luxury client shoots and emergencies.</p>
+      </div>
+
+      <!-- Bento Item 3: Contact Info Quick Card -->
+      <div class="bento-item reveal" id="bento-3">
+        <h3 class="bento-title"><i data-lucide="map-pin"></i> Location Map</h3>
+        <p class="bento-desc" style="margin-bottom:1rem;">105 Turning Leaf Cir, Boiling Springs, SC 29316</p>
+        <a href="https://maps.app.goo.gl/a8uaZ5cPXz3U4XRbA" target="_blank" class="btn btn-secondary" style="font-size:0.8rem; padding:0.6rem; justify-content:center;" id="bento-get-directions-btn">
+          Get Directions <i data-lucide="navigation"></i>
+        </a>
+      </div>
+
+      <!-- Bento Item 4: Large Testimonial Slider inside Bento -->
+      <div class="bento-item bento-item-large reveal" id="bento-4">
+        <h3 class="bento-title"><i data-lucide="message-square"></i> Five-Star Client Praise</h3>
+        
+        <div class="testimonial-carousel" id="carousel-box">
+          <!-- Slide 1 -->
+          <div class="testimonial-slide active" id="slide-1">
+            <div class="testimonial-stars">
+              <i data-lucide="star" style="fill:currentColor;"></i>
+              <i data-lucide="star" style="fill:currentColor;"></i>
+              <i data-lucide="star" style="fill:currentColor;"></i>
+              <i data-lucide="star" style="fill:currentColor;"></i>
+              <i data-lucide="star" style="fill:currentColor;"></i>
+            </div>
+            <p class="testimonial-quote">"Akim is an incredibly talented photographer in Boiling Springs, SC! He captured our wedding photos beautifully. The colors, lighting, and cinematic mood exceeded our high expectations. Highly recommended!"</p>
+            <div class="testimonial-profile">
+              <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150" alt="Sarah J. Client portrait">
+              <div class="testimonial-info">
+                <h4>Sarah Jenkins</h4>
+                <p>Boiling Springs, SC | Wedding client</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide" id="slide-2">
+            <div class="testimonial-stars">
+              <i data-lucide="star" style="fill:currentColor;"></i>
+              <i data-lucide="star" style="fill:currentColor;"></i>
+              <i data-lucide="star" style="fill:currentColor;"></i>
+              <i data-lucide="star" style="fill:currentColor;"></i>
+              <i data-lucide="star" style="fill:currentColor;"></i>
+            </div>
+            <p class="testimonial-quote">"The real estate and drone videography Akim produced for our new commercial property was simply stunning. He has an absolute eye for luxury lighting and neon-like night shots."</p>
+            <div class="testimonial-profile">
+              <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150" alt="Marcus R. Corporate client portrait">
+              <div class="testimonial-info">
+                <h4>Marcus Rutherford</h4>
+                <p>Spartanburg, SC | Commercial Real Estate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-dots" id="carousel-dots-box">
+          <div class="testimonial-dot active" data-index="0"></div>
+          <div class="testimonial-dot" data-index="1"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- High Impact Call To Action Section -->
+  <section class="section" id="cta-action">
+    <div class="cta-banner reveal" id="cta-main-banner">
+      <div class="cta-banner-overlay"></div>
+      <div class="cta-banner-content">
+        <span class="section-subtitle" style="color:var(--color-cyan); text-shadow:var(--glow-cyan);">SECURE YOUR EXCLUSIVE BOOKING</span>
+        <h2>Let's Capture Your Luxury Story Together</h2>
+        <p>Premium wedding photography, cinematic event coverage, and commercial media spaces fill up months in advance. Contact Boiling Springs' leading creative artist to lock in your date.</p>
+        <div class="hero-ctas">
+          <a href="tel:+18434765700" class="btn btn-primary" id="cta-btn-call">
+            Call (843) 476-5700 <i data-lucide="phone-call"></i>
+          </a>
+          <a href="./contact.html" class="btn btn-secondary" id="cta-btn-details">
+            Location & Contacts <i data-lucide="map-pin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <!-- Col 1: About/SEO -->
+      <div class="footer-column" id="footer-col-1">
+        <a href="./index.html" class="navbar-logo" style="margin-bottom: 1.5rem;" id="footer-logo-link">
+          <img src="https://static.wixstatic.com/media/10bc50_5043d7c988c6460aad67f80406d2de85~mv2.png/v1/fill/w_234,h_234,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/gemini_generated_image_6nzisa6nzisa6nzi-removebg-preview_png_w%3D254%26h%3D254%26allow_lossy%3D1.png" alt="ShotByAkim Photography Logo">
+          <span class="logo-text">ShotByAkim</span>
+        </a>
+        <p class="footer-desc">ShotByAkim Photography and Videography is a high-contrast luxury studio in Boiling Springs, SC, capturing memories that stand the test of time.</p>
+        <div class="footer-socials">
+          <a href="https://maps.app.goo.gl/a8uaZ5cPXz3U4XRbA" class="footer-social-icon" target="_blank" aria-label="Google Map" id="social-google"><i data-lucide="map-pin" style="width:18px; height:18px;"></i></a>
+          <a href="https://shotbyakimpav.wixsite.com/photographer" class="footer-social-icon" target="_blank" aria-label="Wix Site" id="social-wix"><i data-lucide="globe" style="width:18px; height:18px;"></i></a>
+          <a href="tel:+18434765700" class="footer-social-icon" aria-label="Phone" id="social-phone"><i data-lucide="phone" style="width:18px; height:18px;"></i></a>
+          <a href="mailto:akimalston.aa@gmail.com" class="footer-social-icon" aria-label="Email" id="social-email"><i data-lucide="mail" style="width:18px; height:18px;"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2: Business Info -->
+      <div class="footer-column" id="footer-col-2">
+        <h4>Our Information</h4>
+        <ul class="footer-info">
+          <li class="footer-info-item">
+            <i data-lucide="phone"></i>
+            <div>
+              <p style="font-weight:600; color:var(--color-white);">Call Us</p>
+              <a href="tel:+18434765700">(843) 476-5700</a>
+            </div>
+          </li>
+          <li class="footer-info-item">
+            <i data-lucide="mail"></i>
+            <div>
+              <p style="font-weight:600; color:var(--color-white);">Email Us</p>
+              <a href="mailto:akimalston.aa@gmail.com">akimalston.aa@gmail.com</a>
+            </div>
+          </li>
+          <li class="footer-info-item">
+            <i data-lucide="map-pin"></i>
+            <div>
+              <p style="font-weight:600; color:var(--color-white);">Studio Address</p>
+              <a href="https://maps.app.goo.gl/a8uaZ5cPXz3U4XRbA" target="_blank">105 Turning Leaf Cir,<br>Boiling Springs, SC 29316</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Navigation -->
+      <div class="footer-column" id="footer-col-3">
+        <h4>Navigation Links</h4>
+        <ul class="footer-links">
+          <li class="footer-link-item"><a href="./index.html" class="footer-link"><i data-lucide="chevron-right" style="width:14px; height:14px;"></i> Home</a></li>
+          <li class="footer-link-item"><a href="./about.html" class="footer-link"><i data-lucide="chevron-right" style="width:14px; height:14px;"></i> About Story</a></li>
+          <li class="footer-link-item"><a href="./services.html" class="footer-link"><i data-lucide="chevron-right" style="width:14px; height:14px;"></i> Luxury Services</a></li>
+          <li class="footer-link-item"><a href="./contact.html" class="footer-link"><i data-lucide="chevron-right" style="width:14px; height:14px;"></i> Contact Us</a></li>
+          <li class="footer-link-item"><a href="./privacy-policy.html" class="footer-link"><i data-lucide="chevron-right" style="width:14px; height:14px;"></i> Privacy Policy</a></li>
+          <li class="footer-link-item"><a href="./terms-and-conditions.html" class="footer-link"><i data-lucide="chevron-right" style="width:14px; height:14px;"></i> Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Greyscale Map -->
+      <div class="footer-column" id="footer-col-4">
+        <h4>Studio Location</h4>
+        <div class="footer-map-container" id="footer-map-container-box">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.444218683103!2d-82.01633519999999!3d35.0956559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88579975762da7ef%3A0xcb1b59074cb8c156!2s105%20Turning%20Leaf%20Cir%2C%20Boiling%20Springs%2C%20SC%2029316!5e0!3m2!1sen!2sus!4v1716200000000!5m2!1sen!2sus" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Google Maps Studio Location">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Sub Footer Copyright & Partner Links -->
+    <div class="sub-footer">
+      <p id="copyright-text">&copy; 2026 ShotByAkim Photography and Videography. All rights reserved.</p>
+      <p id="secured-by-text">Powered and secured by <a href="https://therankinggeeks.ai/" target="_blank" id="ranking-geeks-link">The Ranking Geeks</a></p>
+    </div>
+  </footer>
+
+  <!-- JSON-LD Local Business Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "ShotByAkim Photography and Videography",
+      "image": "https://static.wixstatic.com/media/10bc50_5043d7c988c6460aad67f80406d2de85~mv2.png/v1/fill/w_234,h_234,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/gemini_generated_image_6nzisa6nzisa6nzi-removebg-preview_png_w%3D254%26h%3D254%26allow_lossy%3D1.png",
+      "@id": "https://shotbyakimpav.wixsite.com/photographer",
+      "url": "https://shotbyakimpav.wixsite.com/photographer",
+      "telephone": "+18434765700",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "105 Turning Leaf Cir",
+        "addressLocality": "Boiling Springs",
+        "addressRegion": "SC",
+        "postalCode": "29316",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.0956559,
+        "longitude": -82.01633519999999
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "00:00"
+      },
+      "sameAs": [
+        "https://maps.app.goo.gl/a8uaZ5cPXz3U4XRbA",
+        "https://shotbyakimpav.wixsite.com/photographer"
+      ]
+    }
+  </script>
+
+  <!-- Lucide Icons Library CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.395.0/dist/umd/lucide.min.js"></script>
+
+  <!-- Vanilla JS Engine -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // 1. Particle System
+    const canvas = document.getElementById('particles-canvas');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      
+      function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resize);
+      resize();
+      
+      class Particle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.size = Math.random() * 2 + 0.8;
+          this.speedX = (Math.random() - 0.5) * 0.4;
+          this.speedY = (Math.random() - 0.5) * 0.4;
+          this.color = Math.random() > 0.55 ? 'rgba(0, 240, 255, 0.25)' : 'rgba(189, 0, 255, 0.25)';
+        }
+        update() {
+          this.x += this.speedX;
+          this.y += this.speedY;
+          if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+          if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+        }
+        draw() {
+          ctx.fillStyle = this.color;
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+      
+      const particleCount = Math.min(45, Math.floor(window.innerWidth / 30));
+      for (let i = 0; i < particleCount; i++) {
+        particles.push(new Particle());
+      }
+      
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.update();
+          p.draw();
+        });
+        requestAnimationFrame(animate);
+      }
+      animate();
+    }
+
+    // 2. Navigation Scroll Effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // 3. Hamburger Toggle
+    const hamburger = document.getElementById('hamburger-btn');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close mobile nav when clicking a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // 4. Portfolio Category Filtering
+    const tabs = document.querySelectorAll('.portfolio-tab');
+    const items = document.querySelectorAll('.portfolio-item');
+    
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Toggle Active Tab class
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        
+        const filter = tab.getAttribute('data-filter');
+        
+        items.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.style.display = 'block';
+            setTimeout(() => {
+              item.style.opacity = '1';
+              item.style.transform = 'scale(1)';
+            }, 10);
+          } else {
+            item.style.opacity = '0';
+            item.style.transform = 'scale(0.8)';
+            setTimeout(() => {
+              item.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+
+    // 5. Scroll Reveal Engine
+    const reveals = document.querySelectorAll('.reveal');
+    function revealOnScroll() {
+      const windowHeight = window.innerHeight;
+      reveals.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const revealPoint = 80;
+        if (elementTop < windowHeight - revealPoint) {
+          element.classList.add('active');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // run once on load
+
+    // 6. Testimonial Slide Engine
+    const slides = document.querySelectorAll('.testimonial-slide');
+    const dots = document.querySelectorAll('.testimonial-dot');
+    let currentSlide = 0;
+    let slideInterval;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        dots[i].classList.remove('active');
+      });
+      slides[index].classList.add('active');
+      dots[index].classList.add('active');
+      currentSlide = index;
+    }
+
+    function nextSlide() {
+      let nextIdx = (currentSlide + 1) % slides.length;
+      showSlide(nextIdx);
+    }
+
+    function startSlideShow() {
+      slideInterval = setInterval(nextSlide, 7500);
+    }
+
+    function stopSlideShow() {
+      clearInterval(slideInterval);
+    }
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', (e) => {
+        const targetIdx = parseInt(e.target.getAttribute('data-index'));
+        showSlide(targetIdx);
+        stopSlideShow();
+        startSlideShow();
+      });
+    });
+
+    startSlideShow();
+
+    // 7. Dynamic Cursor Mouse Parallax Effect on Content Cards
+    const tiltCards = document.querySelectorAll('.service-card, .bento-item, .hero-content');
+    tiltCards.forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left - (rect.width/2);
+        const y = e.clientY - rect.top - (rect.height/2);
+        
+        // Moderate values for subtle lux effect
+        const factorX = 4;
+        const factorY = 4;
+        const tiltX = (y / rect.height) * factorY;
+        const tiltY = -(x / rect.width) * factorX;
+        
+        card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(-5px)`;
+      });
+      
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+      });
+    });
+  </script>
+</body>
+</html>

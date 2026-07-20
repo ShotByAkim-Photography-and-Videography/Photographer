@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Contact Us | ShotByAkim Photography & Videography Boiling Springs SC</title>
+  <meta name="description" content="Get in touch with ShotByAkim in Boiling Springs, SC. Click to call, email, or find directions to our premium photography and videography studio. Dual map views and business hours included.">
+  <meta name="keywords" content="Wedding Photographer in Boiling Springs SC, Professional Videography in Boiling Springs SC, Event Photography in Boiling Springs SC, Contact ShotByAkim, Akim Alston Phone Number">
+  <link rel="canonical" href="https://shotbyakimpav.wixsite.com/photographer/contact">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shotbyakimpav.wixsite.com/photographer/contact.html">
+  <meta property="og:title" content="Contact Us | ShotByAkim Photography & Videography">
+  <meta property="og:description" content="Quick, direct contact methods for Akim Alston. Find clickable phone numbers, email addresses, directions, and our Google Business Profile page.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1200&auto=format&fit=crop">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-black: #000000;
+      --color-dark: #070708;
+      --color-charcoal: #121214;
+      --color-glass: rgba(10, 10, 12, 0.7);
+      --color-glass-border: rgba(255, 255, 255, 0.08);
+      --color-cyan: #00f0ff;
+      --color-purple: #bd00ff;
+      --color-blue: #0072ff;
+      --color-white: #ffffff;
+      --font-display: 'Space Grotesk', sans-serif;
+      --font-sans: 'Inter', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --glow-cyan: 0 0 15px rgba(0, 240, 255, 0.4);
+      --glow-purple: 0 0 15px rgba(189, 0, 255, 0.4);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: var(--font-sans);
+      background-color: var(--color-black);
+      color: var(--color-white);
+      overflow-x: hidden;
+    }
+
+    body {
+      background-color: var(--color-black);
+    }
+
+    /* Particles background */
+    #particles-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    /* Navigation */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-glass-border);
+      transition: all 0.3s ease;
+    }
+    .navbar.scrolled {
+      background: rgba(7, 7, 8, 0.9);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8), 0 1px 10px rgba(0, 240, 255, 0.1);
+    }
+    .navbar-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      gap: 0.75rem;
+    }
+    .navbar-logo img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+    }
+    .logo-text {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--color-white);
+      letter-spacing: 1px;
+    }
+    .logo-text span {
+      background: linear-gradient(90deg, var(--color-cyan), var(--color-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    .nav-link {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 0.25rem 0;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: var(--color-cyan);
+      text-shadow: var(--glow-cyan);
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--color-cyan), var(--color-purple));
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after, .nav-link.active::after {
+      width: 100%;
+    }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+      z-index: 1010;
+    }
+    .hamburger .bar {
+      width: 25px;
+      height: 2px;
+      background-color: var(--color-white);
+      transition: all 0.3s ease;
+    }
+
+    @media (max-width: 900px) {
+      .hamburger { display: flex; }
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        background: rgba(7, 7, 8, 0.95);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        border-left: 1px solid var(--color-glass-border);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.9);
+      }
+      .nav-links.active { right: 0; }
+      .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        background-color: var(--color-cyan);
+      }
+      .hamburger.active .bar:nth-child(2) { opacity: 0; }
+      .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+        background-color: var(--color-cyan);
+      }
+    }
+
+    /* Subpage Header Hero */
+    .subpage-hero {
+      padding: 10rem 2rem 5rem;
+      background: linear-gradient(180deg, rgba(7, 7, 8, 0.4) 0%, rgba(0,0,0,1) 100%),
+                  url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&q=80&w=1920');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      border-bottom: 1px solid var(--color-glass-border);
+    }
+    .subpage-hero-card {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--color-glass);
+      backdrop-filter: blur(12px);
+      padding: 3rem 2rem;
+      border-radius: 20px;
+      border: 1px solid var(--color-glass-border);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+    }
+    .subpage-hero h1 {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .subpage-hero h1 span {
+      background: linear-gradient(90deg, var(--color-cyan), var(--color-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .subpage-hero p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.6;
+    }
+
+    /* Section Styling */
+    .section {
+      padding: 6rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    @media (max-width: 850px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+    }
+
+    .section-subtitle {
+      font-family: var(--font-mono);
+      color: var(--color-cyan);
+      font-size: 0.8rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+      display: block;
+      text-shadow: var(--glow-cyan);
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 2.3rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    .section-title span {
+      background: linear-gradient(90deg, var(--color-cyan), var(--color-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Contact Cards */
+    .contact-item-box {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--color-glass-border);
+      padding: 1.5rem 2rem;
+      border-radius: 16px;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+    .contact-item-box:hover {
+      background: var(--color-glass);
+      border-color: var(--color-cyan);
+      box-shadow: var(--glow-cyan);
+      transform: translateX(5px);
+    }
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--color-glass-border);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-cyan);
+      transition: all 0.3s ease;
+    }
+    .contact-item-box:hover .contact-icon {
+      background: rgba(0, 240, 255, 0.15);
+      border-color: var(--color-cyan);
+      box-shadow: var(--glow-cyan);
+    }
+    .contact-item-details h4 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      color: rgba(255,255,255,0.9);
+    }
+    .contact-item-details p {
+      font-size: 0.95rem;
+      color: var(--color-cyan);
+    }
+
+    /* Luxury Holographic Business Card */
+    .business-card-container {
+      perspective: 1000px;
+      width: 100%;
+      max-width: 420px;
+      aspect-ratio: 1.75/1;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+    .business-card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .business-card-front, .business-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 20px;
+      border: 1.5px solid rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+    }
+    .business-card-front {
+      background: linear-gradient(135deg, rgba(7, 7, 8, 0.95) 0%, rgba(18, 18, 20, 0.95) 100%);
+      border-color: var(--color-cyan);
+      box-shadow: var(--glow-cyan);
+    }
+    .business-card-back {
+      background: linear-gradient(135deg, rgba(18, 18, 20, 0.95) 0%, rgba(7, 7, 8, 0.95) 100%);
+      transform: rotateY(180deg);
+      border-color: var(--color-purple);
+    }
+    .business-card.flipped {
+      transform: rotateY(180deg);
+    }
+    .card-chip {
+      width: 40px;
+      height: 30px;
+      background: linear-gradient(45deg, #121214, #2a2a30);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 6px;
+    }
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .card-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .card-logo img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid var(--color-cyan);
+    }
+    .card-logo-text {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--color-white);
+      letter-spacing: 0.5px;
+    }
+    .card-middle h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--color-white);
+      letter-spacing: 0.5px;
+    }
+    .card-middle p {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--color-cyan);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 0.25rem;
+    }
+    .card-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-size: 0.8rem;
+    }
+    .card-number {
+      font-family: var(--font-mono);
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 1px;
+    }
+
+    /* Large Interactive Map Section */
+    .interactive-map-section {
+      border-top: 1px solid var(--color-glass-border);
+      border-bottom: 1px solid var(--color-glass-border);
+      background: #040405;
+      padding: 5rem 2rem;
+    }
+    .map-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid var(--color-glass-border);
+      height: 450px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.8);
+      position: relative;
+    }
+    .map-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      filter: grayscale(100%) invert(90%) contrast(120%);
+    }
+
+    /* Hours Panel */
+    .hours-panel {
+      background: var(--color-glass);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--color-glass-border);
+      border-radius: 20px;
+      padding: 2.5rem;
+      height: 100%;
+    }
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      padding: 0.9rem 0;
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+    }
+    .hours-row:last-child {
+      border: none;
+    }
+    .hours-day {
+      color: rgba(255,255,255,0.8);
+    }
+    .hours-time {
+      color: var(--color-cyan);
+      font-weight: 500;
+    }
+
+    /* Buttons */
+    .btn {
+      position: relative;
+      padding: 0.9rem 2rem;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      overflow: hidden;
+      justify-content: center;
+    }
+    .btn-primary {
+      background: linear-gradient(90deg, var(--color-cyan), var(--color-blue));
+      color: var(--color-black);
+      border: none;
+      box-shadow: var(--glow-cyan);
+    }
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 25px rgba(0, 240, 255, 0.7);
+    }
+    .btn-secondary {
+      background: rgba(255,255,255,0.05);
+      color: var(--color-white);
+      border: 1px solid var(--color-glass-border);
+      backdrop-filter: blur(8px);
+    }
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: var(--color-purple);
+      box-shadow: var(--glow-purple);
+      transform: translateY(-3px);
+    }
+
+    /* Premium Footer */
+    .footer {
+      background: #040405;
+      border-top: 1px solid var(--color-glass-border);
+      padding: 5rem 2rem 2rem;
+      position: relative;
+      z-index: 10;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+      gap: 3rem;
+    }
+    @media (max-width: 950px) {
+      .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+    }
+    @media (max-width: 600px) {
+      .footer-container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+    .footer-column h4 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: var(--color-white);
+      letter-spacing: 0.5px;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+    .footer-column h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: var(--color-cyan);
+    }
+    .footer-desc {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    .footer-socials {
+      display: flex;
+      gap: 1rem;
+    }
+    .footer-social-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--color-glass-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .footer-social-icon:hover {
+      background: rgba(0, 240, 255, 0.1);
+      border-color: var(--color-cyan);
+      color: var(--color-cyan);
+      box-shadow: var(--glow-cyan);
+      transform: translateY(-3px);
+    }
+    .footer-links {
+      list-style: none;
+    }
+    .footer-link-item {
+      margin-bottom: 0.75rem;
+    }
+    .footer-link {
+      text-decoration: none;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .footer-link:hover {
+      color: var(--color-cyan);
+      text-shadow: var(--glow-cyan);
+      padding-left: 5px;
+    }
+    .footer-info {
+      list-style: none;
+    }
+    .footer-info-item {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.7);
+    }
+    .footer-info-item i {
+      color: var(--color-cyan);
+      flex-shrink: 0;
+    }
+    .footer-info-item a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .footer-info-item a:hover {
+      color: var(--color-cyan);
+    }
+    .footer-map-container {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--color-glass-border);
+      height: 160px;
+      position: relative;
+    }
+    .footer-map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      filter: grayscale(100%) invert(90%) contrast(120%);
+    }
+
+    .sub-footer {
+      max-width: 1200px;
+      margin: 4rem auto 0;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+    }
+    .sub-footer a {
+      color: var(--color-cyan);
+      text-decoration: none;
+      font-weight: 500;
+      transition: text-shadow 0.3s ease;
+    }
+    .sub-footer a:hover {
+      text-shadow: var(--glow-cyan);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Particles Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="./index.html" class="navbar-logo">
+        <img src="https://static.wixstatic.com/media/10bc50_5043d7c988c6460aad67f80406d2de85~mv2.png/v1/fill/w_234,h_234,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/gemini_generated_image_6nzisa6nzisa6nzi-removebg-preview_png_w%3D254%26h%3D254%26allow_lossy%3D1.png" alt="ShotByAkim Photography Logo">
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="./about.html" class="nav-link">About</a>
+        <a href="./services.html" class="nav-link">Services</a>
+        <a href="./contact.html" class="nav-link active">Contact Us</a>
+      </nav>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Contact Hero -->
+  <section class="subpage-hero" id="contact-hero-section">
+    <div class="subpage-hero-card">
+      <span class="section-subtitle" style="color:var(--color-cyan); text-shadow:var(--glow-cyan);">DIRECT CONNECTIVITY</span>
+      <h1>Contact <span>Us</span></h1>
+      <p>Initiate direct access to Akim Alston’s creative booking calendar. No long contact form chains—just instant direct links to phone, email, and Google Business channels.</p>
+    </div>
+  </section>
+
+  <!-- Contact Channels Grid -->
+  <section class="section" id="contact-channels">
+    <div class="grid-2">
+      
+      <!-- Direct Contact Info -->
+      <div class="reveal" id="direct-links-card">
+        <span class="section-subtitle">QUICK CONTACT METHODS</span>
+        <h2 class="section-title">Direct Client <span>Hotlines</span></h2>
+        
+        <!-- Phone -->
+        <a href="tel:+18434765700" class="contact-item-box" id="contact-phone-box">
+          <div class="contact-icon"><i data-lucide="phone"></i></div>
+          <div class="contact-item-details">
+            <h4>Click To Call Now</h4>
+            <p>(843) 476-5700</p>
+          </div>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:akimalston.aa@gmail.com" class="contact-item-box" id="contact-email-box">
+          <div class="contact-icon"><i data-lucide="mail"></i></div>
+          <div class="contact-item-details">
+            <h4>Email Akim Direct</h4>
+            <p>akimalston.aa@gmail.com</p>
+          </div>
+        </a>
+
+        <!-- Address -->
+        <a href="https://maps.app.goo.gl/a8uaZ5cPXz3U4XRbA" target="_blank" class="contact-item-box" id="contact-address-box">
+          <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+          <div class="contact-item-details">
+            <h4>Studio Address</h4>
+            <p>105 Turning Leaf Cir, Boiling Springs, SC 29316</p>
+          </div>
+        </a>
+
+        <div style="height: 1rem;"></div>
+        <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="https://maps.app.goo.gl/a8uaZ5cPXz3U4XRbA" target="_blank" class="btn btn-primary" id="contact-g-profile-btn">
+            Explore More <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="https://maps.app.goo.gl/a8uaZ5cPXz3U4XRbA" target="_blank" class="btn btn-secondary" id="contact-directions-btn">
+            Directions Map <i data-lucide="navigation"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Business Hours & Digital Business Card -->
+      <div class="reveal" id="business-card-and-hours">
+        
+        <!-- Interactive Business Card -->
+        <div style="margin-bottom: 2rem;">
+          <span class="section-subtitle" style="text-align: center; margin-bottom: 1rem;">3D INTERACTIVE BUSINESS CARD</span>
+          <div class="business-card-container" id="b-card-trigger">
+            <div class="business-card" id="b-card">
+              
+              <!-- Front of Card -->
+              <div class="business-card-front">
+                <div class="card-top">
+                  <div class="card-chip"></div>
+                  <div class="card-logo">
+                    <img src="https://static.wixstatic.com/media/10bc50_5043d7c988c6460aad67f80406d2de85~mv2.png/v1/fill/w_234,h_234,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/gemini_generated_image_6nzisa6nzisa6nzi-removebg-preview_png_w%3D254%26h%3D254%26allow_lossy%3D1.png" alt="ShotByAkim Logo">
+                    <span class="card-logo-text">ShotByAkim</span>
+                  </div>
+                </div>
+                <div class="card-middle">
+                  <h3>Akim Alston</h3>
+                  <p>Lead Creative / Founder</p>
+                </div>
+                <div class="card-bottom">
+                  <span class="card-number">843 • 476 • 5700</span>
+                  <span style="color:var(--color-cyan); font-family:var(--font-mono); font-size:0.7rem; text-shadow:var(--glow-cyan);">TAP TO FLIP</span>
+                </div>
+              </div>
+
+              <!-- Back of Card -->
+              <div class="business-card-back">
+                <div class="card-top" style="flex-direction: column; gap:0.25rem;">
+                  <h4 style="font-family:var(--font-display); font-weight:700; color:var(--color-purple);">SHOTBYAKIM</h4>
+                  <p style="font-size:0.75rem; color:rgba(255,255,255,0.6);">Boiling Springs, SC 29316</p>
+                </div>
+                <div style="font-size:0.8rem; line-height:1.4; color:rgba(255,255,255,0.85); font-family:var(--font-sans);">
+                  <p>✦ Weddings & Engagement</p>
+                  <p>✦ Portraits & Commercial</p>
+                  <p>✦ Drone Cinema Production</p>
+                </div>
+                <div class="card-bottom" style="width: 100%; justify-content: space-between;">
+                  <span style="font-family:var(--font-mono); font-size:0.7rem; color:rgba(255,255,255,0.4);">akimalston.aa@gmail.com</span>
+                  <span style="color:var(--color-purple); font-family:var(--font-mono); font-size:0.7rem; text-shadow:var(--glow-purple);">TAP TO FLIP</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Hours Card -->
+        <div class="hours-panel">
+          <h3 class="section-subtitle" style="color:var(--color-purple); text-shadow:var(--glow-purple); margin-bottom: 1rem;"><i data-lucide="clock" style="vertical-align: middle; margin-right: 0.5rem; width:16px; height:16px;"></i> Studio Business Hours</h3>
+          <div class="hours-row"><span class="hours-day">Monday</span><span class="hours-time">8:00 AM - 12:00 AM</span></div>
+          <div class="hours-row"><span class="hours-day">Tuesday</span><span class="hours-time">8:00 AM - 12:00 AM</span></div>
+          <div class="hours-row"><span class="hours-day">Wednesday</span><span class="hours-time">8:00 AM - 12:00 AM</span></div>
+          <div class="hours-row"><span class="hours-day">Thursday</span><span class="hours-time">8:00 AM - 12:00 AM</span></div>
+          <div class="hours-row"><span class="hours-day">Friday</span><span class="hours-time">8:00 AM - 12:00 AM</span></div>
+          <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">8:00 AM - 12:00 AM</span></div>
+          <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-time">8:00 AM - 12:00 AM</span></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Large Interactive Google Maps Section -->
+  <section class="interactive-map-section reveal" id="large-location-map">
+    <div class="map-wrapper">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.444218683103!2d-82.01633519999999!3d35.0956559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88579975762da7ef%3A0xcb1b59074cb8c156!2s105%20Turning%20Leaf%20Cir%2C%20Boiling%20Springs%2C%20SC%2029316!5e0!3m2!1sen!2sus!4v1716200000000!5m2!1sen!2sus" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Interactive Studio Map">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <!-- Col 1 -->
+      <div class="footer-column" id="footer-col-1">
+        <a href="./index.html" class="navbar-logo" style="margin-bottom: 1.5rem;">
+          <img src="https://static.wixstatic.com/media/10bc50_5043d7c988c6460aad67f80406d2de85~mv2.png/v1/fill/w_234,h_234,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/gemini_generated_image_6nzisa6nzisa6nzi-removebg-preview_png_w%3D254%26h%3D254%26allow_lossy%3D1.png" alt="ShotByAkim Photography Logo">
+          <span class="logo-text">ShotByAkim</span>
+        </a>
+        <p class="footer-desc">ShotByAkim Photography and Videography is a high-contrast luxury studio in Boiling Springs, SC, capturing memories that stand the test of time.</p>
+        <div class="footer-socials">
+          <a href="https://maps.app.goo.gl/a8uaZ5cPXz3U4XRbA" class="footer-social-icon" target="_blank" aria-label="Google Map"><i data-lucide="map-pin" style="width:18px; height:18px;"></i></a>
+          <a href="https://shotbyakimpav.wixsite.com/photographer" class="footer-social-icon" target="_blank" aria-label="Wix Site"><i data-lucide="globe" style="width:18px; height:18px;"></i></a>
+          <a href="tel:+18434765700" class="footer-social-icon" aria-label="Phone"><i data-lucide="phone" style="width:18px; height:18px;"></i></a>
+          <a href="mailto:akimalston.aa@gmail.com" class="footer-social-icon" aria-label="Email"><i data-lucide="mail" style="width:18px; height:18px;"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="footer-column" id="footer-col-2">
+        <h4>Our Information</h4>
+        <ul class="footer-info">
+          <li class="footer-info-item">
+            <i data-lucide="phone"></i>
+            <div>
+              <p style="font-weight:600; color:var(--color-white);">Call Us</p>
+              <a href="tel:+18434765700">(843) 476-5700</a>
+            </div>
+          </li>
+          <li class="footer-info-item">
+            <i data-lucide="mail"></i>
+            <div>
+              <p style="font-weight:600; color:var(--color-white);">Email Us</p>
+              <a href="mailto:akimalston.aa@gmail.com">akimalston.aa@gmail.com</a>
+            </div>
+          </li>
+          <li class="footer-info-item">
+            <i data-lucide="map-pin"></i>
+            <div>
+              <p style="font-weight:600; color:var(--color-white);">Studio Address</p>
+              <a href="https://maps.app.goo.gl/a8uaZ5cPXz3U4XRbA" target="_blank">105 Turning Leaf Cir,<br>Boiling Springs, SC 29316</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div class="footer-column" id="footer-col-3">
+        <h4>Navigation Links</h4>
+        <ul class="footer-links">
+          <li class="footer-link-item"><a href="./index.html" class="footer-link"><i data-lucide="chevron-right" style="width:14px; height:14px;"></i> Home</a></li>
+          <li class="footer-link-item"><a href="./about.html" class="footer-link"><i data-lucide="chevron-right" style="width:14px; height:14px;"></i> About Story</a></li>
+          <li class="footer-link-item"><a href="./services.html" class="footer-link"><i data-lucide="chevron-right" style="width:14px; height:14px;"></i> Luxury Services</a></li>
+          <li class="footer-link-item"><a href="./contact.html" class="footer-link"><i data-lucide="chevron-right" style="width:14px; height:14px;"></i> Contact Us</a></li>
+          <li class="footer-link-item"><a href="./privacy-policy.html" class="footer-link"><i data-lucide="chevron-right" style="width:14px; height:14px;"></i> Privacy Policy</a></li>
+          <li class="footer-link-item"><a href="./terms-and-conditions.html" class="footer-link"><i data-lucide="chevron-right" style="width:14px; height:14px;"></i> Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4 -->
+      <div class="footer-column" id="footer-col-4">
+        <h4>Studio Location</h4>
+        <div class="footer-map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.444218683103!2d-82.01633519999999!3d35.0956559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88579975762da7ef%3A0xcb1b59074cb8c156!2s105%20Turning%20Leaf%20Cir%2C%20Boiling%20Springs%2C%20SC%2029316!5e0!3m2!1sen!2sus!4v1716200000000!5m2!1sen!2sus" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Google Maps Studio Location">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Sub Footer -->
+    <div class="sub-footer">
+      <p>&copy; 2026 ShotByAkim Photography and Videography. All rights reserved.</p>
+      <p>Powered and secured by <a href="https://therankinggeeks.ai/" target="_blank">The Ranking Geeks</a></p>
+    </div>
+  </footer>
+
+  <!-- Lucide Icons Library CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.395.0/dist/umd/lucide.min.js"></script>
+
+  <!-- Vanilla JS Engine -->
+  <script>
+    lucide.createIcons();
+
+    // Particle background
+    const canvas = document.getElementById('particles-canvas');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resize);
+      resize();
+      
+      class Particle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.size = Math.random() * 2 + 0.8;
+          this.speedX = (Math.random() - 0.5) * 0.4;
+          this.speedY = (Math.random() - 0.5) * 0.4;
+          this.color = Math.random() > 0.55 ? 'rgba(0, 240, 255, 0.25)' : 'rgba(189, 0, 255, 0.25)';
+        }
+        update() {
+          this.x += this.speedX;
+          this.y += this.speedY;
+          if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+          if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+        }
+        draw() {
+          ctx.fillStyle = this.color;
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+      
+      const particleCount = Math.min(45, Math.floor(window.innerWidth / 30));
+      for (let i = 0; i < particleCount; i++) {
+        particles.push(new Particle());
+      }
+      
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.update();
+          p.draw();
+        });
+        requestAnimationFrame(animate);
+      }
+      animate();
+    }
+
+    // Scroll effect on Navbar
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Hamburger Toggle
+    const hamburger = document.getElementById('hamburger-btn');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close mobile nav when clicking a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // Scroll Reveal Engine
+    const reveals = document.querySelectorAll('.reveal');
+    function revealOnScroll() {
+      const windowHeight = window.innerHeight;
+      reveals.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const revealPoint = 80;
+        if (elementTop < windowHeight - revealPoint) {
+          element.classList.add('active');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+
+    // Interactive Business Card 3D Flip
+    const businessCardTrigger = document.getElementById('b-card-trigger');
+    const businessCard = document.getElementById('b-card');
+    if (businessCardTrigger && businessCard) {
+      businessCardTrigger.addEventListener('click', () => {
+        businessCard.classList.toggle('flipped');
+      });
+    }
+
+    // Mouse tilt effect on cards
+    const tiltCards = document.querySelectorAll('.contact-item-box, .hours-panel, .subpage-hero-card, .business-card-container');
+    tiltCards.forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left - (rect.width/2);
+        const y = e.clientY - rect.top - (rect.height/2);
+        const tiltX = (y / rect.height) * 4;
+        const tiltY = -(x / rect.width) * 4;
+        card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(-2px)`;
+      });
+      card.style.transform = 'perspective(1000px)';
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+      });
+    });
+  </script>
+</body>
+</html>

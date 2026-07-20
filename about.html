@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>About Us | ShotByAkim Photography & Videography Boiling Springs SC</title>
+  <meta name="description" content="Meet Akim Alston, founder of ShotByAkim. Learn about our creative process, top-tier cinema equipment, and values as Boiling Springs, SC's premium wedding photographer and cinematic videographer.">
+  <meta name="keywords" content="Wedding Photographer in Boiling Springs SC, Professional Videography in Boiling Springs SC, Event Photography in Boiling Springs SC, ShotByAkim Story, Akim Alston Photographer">
+  <link rel="canonical" href="https://shotbyakimpav.wixsite.com/photographer/about">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shotbyakimpav.wixsite.com/photographer/about.html">
+  <meta property="og:title" content="About Us | ShotByAkim Photography & Videography">
+  <meta property="og:description" content="Discover the story and artistic vision of Akim Alston. Discover our premium creative processes and state-of-the-art camera systems in Boiling Springs, SC.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1200&auto=format&fit=crop">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-black: #000000;
+      --color-dark: #070708;
+      --color-charcoal: #121214;
+      --color-glass: rgba(10, 10, 12, 0.7);
+      --color-glass-border: rgba(255, 255, 255, 0.08);
+      --color-cyan: #00f0ff;
+      --color-purple: #bd00ff;
+      --color-blue: #0072ff;
+      --color-white: #ffffff;
+      --font-display: 'Space Grotesk', sans-serif;
+      --font-sans: 'Inter', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --glow-cyan: 0 0 15px rgba(0, 240, 255, 0.4);
+      --glow-purple: 0 0 15px rgba(189, 0, 255, 0.4);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: var(--font-sans);
+      background-color: var(--color-black);
+      color: var(--color-white);
+      overflow-x: hidden;
+    }
+
+    body {
+      background-color: var(--color-black);
+    }
+
+    /* Particles background */
+    #particles-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    /* Navigation */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-glass-border);
+      transition: all 0.3s ease;
+    }
+    .navbar.scrolled {
+      background: rgba(7, 7, 8, 0.9);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8), 0 1px 10px rgba(0, 240, 255, 0.1);
+    }
+    .navbar-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      gap: 0.75rem;
+    }
+    .navbar-logo img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+    }
+    .logo-text {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--color-white);
+      letter-spacing: 1px;
+    }
+    .logo-text span {
+      background: linear-gradient(90deg, var(--color-cyan), var(--color-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    .nav-link {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 0.25rem 0;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: var(--color-cyan);
+      text-shadow: var(--glow-cyan);
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--color-cyan), var(--color-purple));
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after, .nav-link.active::after {
+      width: 100%;
+    }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+      z-index: 1010;
+    }
+    .hamburger .bar {
+      width: 25px;
+      height: 2px;
+      background-color: var(--color-white);
+      transition: all 0.3s ease;
+    }
+
+    @media (max-width: 900px) {
+      .hamburger { display: flex; }
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        background: rgba(7, 7, 8, 0.95);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        border-left: 1px solid var(--color-glass-border);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.9);
+      }
+      .nav-links.active { right: 0; }
+      .hamburger.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        background-color: var(--color-cyan);
+      }
+      .hamburger.active .bar:nth-child(2) { opacity: 0; }
+      .hamburger.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+        background-color: var(--color-cyan);
+      }
+    }
+
+    /* Subpage Header Hero */
+    .subpage-hero {
+      padding: 10rem 2rem 5rem;
+      background: linear-gradient(180deg, rgba(7, 7, 8, 0.4) 0%, rgba(0,0,0,1) 100%),
+                  url('https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&q=80&w=1920');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      border-bottom: 1px solid var(--color-glass-border);
+    }
+    .subpage-hero-card {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--color-glass);
+      backdrop-filter: blur(12px);
+      padding: 3rem 2rem;
+      border-radius: 20px;
+      border: 1px solid var(--color-glass-border);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+    }
+    .subpage-hero h1 {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .subpage-hero h1 span {
+      background: linear-gradient(90deg, var(--color-cyan), var(--color-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .subpage-hero p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.6;
+    }
+
+    /* Section styling */
+    .section {
+      padding: 6rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    @media (max-width: 850px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+
+    .section-subtitle {
+      font-family: var(--font-mono);
+      color: var(--color-cyan);
+      font-size: 0.8rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+      display: block;
+      text-shadow: var(--glow-cyan);
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 2.3rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    .section-title span {
+      background: linear-gradient(90deg, var(--color-cyan), var(--color-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .about-story-text p {
+      color: rgba(255,255,255,0.75);
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+    }
+    .about-story-text p strong {
+      color: var(--color-cyan);
+    }
+
+    .story-graphics {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.8);
+      border: 1px solid var(--color-glass-border);
+    }
+    .story-graphics img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .story-graphics-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(7, 7, 8, 0.95) 0%, rgba(0,0,0,0.2) 100%);
+      display: flex;
+      align-items: flex-end;
+      padding: 2.5rem;
+    }
+    .story-stat-card {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--color-glass-border);
+      padding: 1.5rem;
+      border-radius: 16px;
+      display: flex;
+      gap: 1.5rem;
+      width: 100%;
+    }
+    .story-stat-item {
+      flex: 1;
+      text-align: center;
+    }
+    .story-stat-num {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--color-cyan);
+      text-shadow: var(--glow-cyan);
+    }
+    .story-stat-label {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+      margin-top: 0.25rem;
+    }
+
+    /* Mission / Vision Cards */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .luxury-card {
+      background: var(--color-glass);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      border: 1px solid var(--color-glass-border);
+      padding: 3rem 2.5rem;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+    .luxury-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(0, 240, 255, 0.3);
+      box-shadow: 0 10px 30px rgba(0, 240, 255, 0.1);
+    }
+    .luxury-card-icon {
+      width: 50px;
+      height: 50px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--color-glass-border);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      color: var(--color-cyan);
+    }
+    .luxury-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: var(--color-white);
+    }
+    .luxury-card p {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* Creative Process Timeline */
+    .timeline {
+      position: relative;
+      max-width: 900px;
+      margin: 3rem auto 0;
+    }
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      background: linear-gradient(180deg, var(--color-cyan), var(--color-purple));
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -1px;
+    }
+    @media (max-width: 768px) {
+      .timeline::after {
+        left: 31px;
+      }
+    }
+    .timeline-container {
+      padding: 10px 40px;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+    @media (max-width: 768px) {
+      .timeline-container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+      .timeline-container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+      }
+    }
+    .timeline-left {
+      left: 0;
+      text-align: right;
+    }
+    .timeline-right {
+      left: 50%;
+    }
+    @media (max-width: 768px) {
+      .timeline-left, .timeline-right {
+        left: 0;
+        text-align: left;
+      }
+    }
+    .timeline-content {
+      padding: 2rem;
+      background: var(--color-glass);
+      backdrop-filter: blur(12px);
+      position: relative;
+      border-radius: 16px;
+      border: 1px solid var(--color-glass-border);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .timeline-circle {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: var(--color-black);
+      border: 4px solid var(--color-cyan);
+      box-shadow: var(--glow-cyan);
+      top: 30px;
+      z-index: 1;
+    }
+    .timeline-left .timeline-circle {
+      right: -50px;
+    }
+    .timeline-right .timeline-circle {
+      left: -50px;
+    }
+    @media (max-width: 768px) {
+      .timeline-left .timeline-circle, .timeline-right .timeline-circle {
+        left: 21px;
+        right: auto;
+      }
+    }
+    .timeline-step {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--color-purple);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 0.5rem;
+      display: block;
+      text-shadow: var(--glow-purple);
+    }
+    .timeline-content h4 {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    .timeline-content p {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    /* Gear Specs List */
+    .gear-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 700px) {
+      .gear-list {
+        grid-template-columns: 1fr;
+      }
+    }
+    .gear-item {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--color-glass-border);
+      padding: 1.5rem;
+      border-radius: 12px;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .gear-icon {
+      color: var(--color-cyan);
+    }
+    .gear-item h4 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    .gear-item p {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    /* CTAs */
+    .btn {
+      position: relative;
+      padding: 0.9rem 2rem;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      overflow: hidden;
+    }
+    .btn-primary {
+      background: linear-gradient(90deg, var(--color-cyan), var(--color-blue));
+      color: var(--color-black);
+      border: none;
+      box-shadow: var(--glow-cyan);
+    }
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 25px rgba(0, 240, 255, 0.7);
+    }
+    .btn-secondary {
+      background: rgba(255,255,255,0.05);
+      color: var(--color-white);
+      border: 1px solid var(--color-glass-border);
+      backdrop-filter: blur(8px);
+    }
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: var(--color-purple);
+      box-shadow: var(--glow-purple);
+      transform: translateY(-3px);
+    }
+
+    /* Premium Footer */
+    .footer {
+      background: #040405;
+      border-top: 1px solid var(--color-glass-border);
+      padding: 5rem 2rem 2rem;
+      position: relative;
+      z-index: 10;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+      gap: 3rem;
+    }
+    @media (max-width: 950px) {
+      .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+    }
+    @media (max-width: 600px) {
+      .footer-container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+    }
+    .footer-column h4 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: var(--color-white);
+      letter-spacing: 0.5px;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+    .footer-column h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: var(--color-cyan);
+    }
+    .footer-desc {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    .footer-socials {
+      display: flex;
+      gap: 1rem;
+    }
+    .footer-social-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--color-glass-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .footer-social-icon:hover {
+      background: rgba(0, 240, 255, 0.1);
+      border-color: var(--color-cyan);
+      color: var(--color-cyan);
+      box-shadow: var(--glow-cyan);
+      transform: translateY(-3px);
+    }
+    .footer-links {
+      list-style: none;
+    }
+    .footer-link-item {
+      margin-bottom: 0.75rem;
+    }
+    .footer-link {
+      text-decoration: none;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .footer-link:hover {
+      color: var(--color-cyan);
+      text-shadow: var(--glow-cyan);
+      padding-left: 5px;
+    }
+    .footer-info {
+      list-style: none;
+    }
+    .footer-info-item {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.7);
+    }
+    .footer-info-item i {
+      color: var(--color-cyan);
+      flex-shrink: 0;
+    }
+    .footer-info-item a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .footer-info-item a:hover {
+      color: var(--color-cyan);
+    }
+    .footer-map-container {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--color-glass-border);
+      height: 160px;
+      position: relative;
+    }
+    .footer-map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      filter: grayscale(100%) invert(90%) contrast(120%);
+    }
+
+    .sub-footer {
+      max-width: 1200px;
+      margin: 4rem auto 0;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+    }
+    .sub-footer a {
+      color: var(--color-cyan);
+      text-decoration: none;
+      font-weight: 500;
+      transition: text-shadow 0.3s ease;
+    }
+    .sub-footer a:hover {
+      text-shadow: var(--glow-cyan);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Particles -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="./index.html" class="navbar-logo">
+        <img src="https://static.wixstatic.com/media/10bc50_5043d7c988c6460aad67f80406d2de85~mv2.png/v1/fill/w_234,h_234,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/gemini_generated_image_6nzisa6nzisa6nzi-removebg-preview_png_w%3D254%26h%3D254%26allow_lossy%3D1.png" alt="ShotByAkim Photography Logo">
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="./about.html" class="nav-link active">About</a>
+        <a href="./services.html" class="nav-link">Services</a>
+        <a href="./contact.html" class="nav-link">Contact Us</a>
+      </nav>
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- About Hero -->
+  <section class="subpage-hero" id="about-hero-section">
+    <div class="subpage-hero-card">
+      <span class="section-subtitle" style="color:var(--color-cyan); text-shadow:var(--glow-cyan);">CRAFTING VISUAL MASTERPIECES</span>
+      <h1>Our Creative <span>Story</span></h1>
+      <p>Uncovering the artistic vision and high-performance equipment behind Boiling Springs, SC’s premier photography and videography studio.</p>
+    </div>
+  </section>
+
+  <!-- Company Story section -->
+  <section class="section" id="company-story">
+    <div class="grid-2">
+      <div class="about-story-text reveal" id="story-content-box">
+        <span class="section-subtitle">THE SHOTBYAKIM ORIGINS</span>
+        <h2 class="section-title">The Pursuit Of <span>Cinematic Artistry</span></h2>
+        <p>Founded by master visual designer Akim Alston, ShotByAkim is an elite, high-contrast creative studio that rejects generic templates and ordinary lighting. We believe that photography and videography are not passive recordings, but active compositions crafted to reveal the deep character, romance, and powerful energy of your most critical moments.</p>
+        <p>Whether hired as a premier Wedding Photographer in Boiling Springs, SC or commissioned for high-definition Professional Videography in Boiling Springs, SC, Akim Alston brings a signature aesthetic characterized by deep, moody shadows, vibrant neon highlights, and cinematic depth. Each visual asset we deliver is calibrated to command attention and endure for generations.</p>
+        <p>At ShotByAkim, we paint with light. We combine rigorous creative pre-planning with intuitive artistic reactions, ensuring every wedding couple, family legacy, and commercial brand receives visual assets of unparalleled distinction. Our Boiling Springs studio is the undisputed home of luxury visual storytelling, trusted as the finest choice for Event Photography in Boiling Springs, SC.</p>
+        
+        <div style="height:1rem;"></div>
+        <a href="https://maps.app.goo.gl/a8uaZ5cPXz3U4XRbA" target="_blank" class="btn btn-primary" id="story-maps-btn">
+          More About Us <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+      <div class="story-graphics reveal" id="story-gfx-box">
+        <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&q=80&w=1000" alt="Camera focus during a professional Boiling Springs SC video shoot">
+        <div class="story-graphics-overlay">
+          <div class="story-stat-card" id="story-stats">
+            <div class="story-stat-item">
+              <div class="story-stat-num">100%</div>
+              <div class="story-stat-label">Luxury Focus</div>
+            </div>
+            <div class="story-stat-item" style="border-left: 1px solid rgba(255,255,255,0.1); border-right: 1px solid rgba(255,255,255,0.1);">
+              <div class="story-stat-num">5.0★</div>
+              <div class="story-stat-label">Client Score</div>
+            </div>
+            <div class="story-stat-item">
+              <div class="story-stat-num">10-Day</div>
+              <div class="story-stat-label">Turnaround</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission / Vision / Philosophy -->
+  <section class="section" style="background: radial-gradient(circle at left, rgba(189,0,255,0.05) 0%, rgba(0,0,0,0) 60%);" id="ideals">
+    <div class="grid-3">
+      <!-- Card 1 -->
+      <div class="luxury-card reveal" id="ideal-card-1">
+        <div class="luxury-card-icon"><i data-lucide="target" style="width:24px; height:24px;"></i></div>
+        <h3>Our Core Mission</h3>
+        <p>To capture human legacy with elegant lighting, state-of-the-art camera dynamics, and strict attention to detail—preserving Boiling Springs, SC's milestones in cinematic perfection.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="luxury-card reveal" id="ideal-card-2">
+        <div class="luxury-card-icon"><i data-lucide="eye" style="width:24px; height:24px;"></i></div>
+        <h3>Creative Vision</h3>
+        <p>To lead the Carolinas in Black Neon luxury media styling, replacing dull, flat, template-style photos with dramatic, high-impact stories that leave a lasting impression.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="luxury-card reveal" id="ideal-card-3">
+        <div class="luxury-card-icon"><i data-lucide="gem" style="width:24px; height:24px;"></i></div>
+        <h3>Creative Philosophy</h3>
+        <p>Whether shaping **Event Photography in Boiling Springs, SC** or complex commercial reels, we treat photography as painting with light. Each shot is styled with balance and high contrast.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timelines and Creative Process -->
+  <section class="section" id="process">
+    <div class="section-header reveal" id="process-header">
+      <span class="section-subtitle">THE LUXURY BLUEPRINT</span>
+      <h2 class="section-title">Our Structured <span>Creative Process</span></h2>
+    </div>
+
+    <div class="timeline">
+      <!-- Step 1 -->
+      <div class="timeline-container timeline-left reveal" id="timeline-step-1">
+        <div class="timeline-circle"></div>
+        <div class="timeline-content">
+          <span class="timeline-step">Step 01</span>
+          <h4>Exclusive Consultation</h4>
+          <p>We analyze your creative vision, preferred locations, and timelines, establishing a structured shot-list mapping your unique aesthetic parameters.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="timeline-container timeline-right reveal" id="timeline-step-2">
+        <div class="timeline-circle"></div>
+        <div class="timeline-content">
+          <span class="timeline-step">Step 02</span>
+          <h4>Precision Directing</h4>
+          <p>Akim Alston orchestrates lighting, positioning, and environmental variables during your luxury session in Boiling Springs, SC, ensuring a comfortable, premium experience.</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="timeline-container timeline-left reveal" id="timeline-step-3">
+        <div class="timeline-circle"></div>
+        <div class="timeline-content">
+          <span class="timeline-step">Step 03</span>
+          <h4>Post-Production Grading</h4>
+          <p>Every frame goes through our elite, multi-stage dark neon color grading, high-contrast detailing, and pristine editing workflow.</p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="timeline-container timeline-right reveal" id="timeline-step-4">
+        <div class="timeline-circle"></div>
+        <div class="timeline-content">
+          <span class="timeline-step">Step 04</span>
+          <h4>The Legacy Delivery</h4>
+          <p>Access your complete, fully optimized ultra-high-resolution digital master library through a secure cloud vault within 10 business days.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Equipment Showcase -->
+  <section class="section" id="equipment" style="background: radial-gradient(circle at right, rgba(0,240,255,0.05) 0%, rgba(0,0,0,0) 60%);">
+    <div class="grid-2">
+      <div class="reveal" id="eq-text-box">
+        <span class="section-subtitle">STATE-OF-THE-ART TOOLKITS</span>
+        <h2 class="section-title">Professional Cinema <span>Systems & Optics</span></h2>
+        <p style="color: rgba(255,255,255,0.75); line-height:1.7; margin-bottom:1.5rem;">To produce elite, high-fidelity **Professional Videography in Boiling Springs, SC**, we utilize advanced, professional tools. We do not rely on entry-level consumer cameras; our gear list is tailored for maximum clarity in challenging lighting environments.</p>
+        <p style="color: rgba(255,255,255,0.75); line-height:1.7; margin-bottom:1.5rem;">Every wedding portrait, aerial drone sweep, and commercial clip features perfect color depth and pixel-perfect clarity. We back this tech with multiple physical backup systems to protect your valuable memories.</p>
+      </div>
+      <div class="gear-list reveal" id="eq-list-box">
+        <!-- Gear 1 -->
+        <div class="gear-item">
+          <div class="gear-icon"><i data-lucide="camera" style="width:24px; height:24px;"></i></div>
+          <div>
+            <h4>Sony Cinema FX Systems</h4>
+            <p>Dual-native ISO camera systems providing spectacular 4K imagery and clean performance in low-light environments.</p>
+          </div>
+        </div>
+        <!-- Gear 2 -->
+        <div class="gear-item">
+          <div class="gear-icon"><i data-lucide="aperture" style="width:24px; height:24px;"></i></div>
+          <div>
+            <h4>G-Master Prime Optics</h4>
+            <p>Premium, wide-aperture lenses creating buttery bokeh backgrounds and ultra-sharp focal points.</p>
+          </div>
+        </div>
+        <!-- Gear 3 -->
+        <div class="gear-item">
+          <div class="gear-icon"><i data-lucide="plane" style="width:24px; height:24px;"></i></div>
+          <div>
+            <h4>DJI Mavic Cinema Drones</h4>
+            <p>Hasselblad aerial camera systems tracking breathtaking bird's-eye footage and luxury landscape pans.</p>
+          </div>
+        </div>
+        <!-- Gear 4 -->
+        <div class="gear-item">
+          <div class="gear-icon"><i data-lucide="shield-check" style="width:24px; height:24px;"></i></div>
+          <div>
+            <h4>Redundant Master Backups</h4>
+            <p>Dual slot high-speed recording combined with local hardware arrays to protect files from loss.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA section -->
+  <section class="section" id="about-cta" style="text-align: center;">
+    <div style="max-width: 700px; margin:0 auto; background: var(--color-glass); border: 1px solid var(--color-glass-border); padding: 4rem 2rem; border-radius:24px; box-shadow: 0 15px 35px rgba(0,0,0,0.8);" class="reveal" id="about-cta-card">
+      <span class="section-subtitle">SCHEDULE A SESSION</span>
+      <h2 class="section-title">Work With <span>Akim Alston</span></h2>
+      <p style="color:rgba(255,255,255,0.75); line-height:1.6; margin-bottom:2rem;">Let’s elevate your memories. Reach out today to lock in your date for wedding photography, portrait sessions, or custom business promotion reels in Boiling Springs, SC.</p>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="tel:+18434765700" class="btn btn-primary" id="about-cta-call">Call Akim Now</a>
+        <a href="./contact.html" class="btn btn-secondary" id="about-cta-contact">Contact Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <!-- Col 1 -->
+      <div class="footer-column" id="footer-col-1">
+        <a href="./index.html" class="navbar-logo" style="margin-bottom: 1.5rem;">
+          <img src="https://static.wixstatic.com/media/10bc50_5043d7c988c6460aad67f80406d2de85~mv2.png/v1/fill/w_234,h_234,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/gemini_generated_image_6nzisa6nzisa6nzi-removebg-preview_png_w%3D254%26h%3D254%26allow_lossy%3D1.png" alt="ShotByAkim Photography Logo">
+          <span class="logo-text">ShotByAkim</span>
+        </a>
+        <p class="footer-desc">ShotByAkim Photography and Videography is a high-contrast luxury studio in Boiling Springs, SC, capturing memories that stand the test of time.</p>
+        <div class="footer-socials">
+          <a href="https://maps.app.goo.gl/a8uaZ5cPXz3U4XRbA" class="footer-social-icon" target="_blank" aria-label="Google Map"><i data-lucide="map-pin" style="width:18px; height:18px;"></i></a>
+          <a href="https://shotbyakimpav.wixsite.com/photographer" class="footer-social-icon" target="_blank" aria-label="Wix Site"><i data-lucide="globe" style="width:18px; height:18px;"></i></a>
+          <a href="tel:+18434765700" class="footer-social-icon" aria-label="Phone"><i data-lucide="phone" style="width:18px; height:18px;"></i></a>
+          <a href="mailto:akimalston.aa@gmail.com" class="footer-social-icon" aria-label="Email"><i data-lucide="mail" style="width:18px; height:18px;"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="footer-column" id="footer-col-2">
+        <h4>Our Information</h4>
+        <ul class="footer-info">
+          <li class="footer-info-item">
+            <i data-lucide="phone"></i>
+            <div>
+              <p style="font-weight:600; color:var(--color-white);">Call Us</p>
+              <a href="tel:+18434765700">(843) 476-5700</a>
+            </div>
+          </li>
+          <li class="footer-info-item">
+            <i data-lucide="mail"></i>
+            <div>
+              <p style="font-weight:600; color:var(--color-white);">Email Us</p>
+              <a href="mailto:akimalston.aa@gmail.com">akimalston.aa@gmail.com</a>
+            </div>
+          </li>
+          <li class="footer-info-item">
+            <i data-lucide="map-pin"></i>
+            <div>
+              <p style="font-weight:600; color:var(--color-white);">Studio Address</p>
+              <a href="https://maps.app.goo.gl/a8uaZ5cPXz3U4XRbA" target="_blank">105 Turning Leaf Cir,<br>Boiling Springs, SC 29316</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div class="footer-column" id="footer-col-3">
+        <h4>Navigation Links</h4>
+        <ul class="footer-links">
+          <li class="footer-link-item"><a href="./index.html" class="footer-link"><i data-lucide="chevron-right" style="width:14px; height:14px;"></i> Home</a></li>
+          <li class="footer-link-item"><a href="./about.html" class="footer-link"><i data-lucide="chevron-right" style="width:14px; height:14px;"></i> About Story</a></li>
+          <li class="footer-link-item"><a href="./services.html" class="footer-link"><i data-lucide="chevron-right" style="width:14px; height:14px;"></i> Luxury Services</a></li>
+          <li class="footer-link-item"><a href="./contact.html" class="footer-link"><i data-lucide="chevron-right" style="width:14px; height:14px;"></i> Contact Us</a></li>
+          <li class="footer-link-item"><a href="./privacy-policy.html" class="footer-link"><i data-lucide="chevron-right" style="width:14px; height:14px;"></i> Privacy Policy</a></li>
+          <li class="footer-link-item"><a href="./terms-and-conditions.html" class="footer-link"><i data-lucide="chevron-right" style="width:14px; height:14px;"></i> Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4 -->
+      <div class="footer-column" id="footer-col-4">
+        <h4>Studio Location</h4>
+        <div class="footer-map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.444218683103!2d-82.01633519999999!3d35.0956559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88579975762da7ef%3A0xcb1b59074cb8c156!2s105%20Turning%20Leaf%20Cir%2C%20Boiling%20Springs%2C%20SC%2029316!5e0!3m2!1sen!2sus!4v1716200000000!5m2!1sen!2sus" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Google Maps Studio Location">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Sub Footer -->
+    <div class="sub-footer">
+      <p>&copy; 2026 ShotByAkim Photography and Videography. All rights reserved.</p>
+      <p>Powered and secured by <a href="https://therankinggeeks.ai/" target="_blank">The Ranking Geeks</a></p>
+    </div>
+  </footer>
+
+  <!-- Lucide Icons Library CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.395.0/dist/umd/lucide.min.js"></script>
+
+  <!-- Vanilla JS Engine -->
+  <script>
+    lucide.createIcons();
+
+    // Particle background
+    const canvas = document.getElementById('particles-canvas');
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resize);
+      resize();
+      
+      class Particle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.size = Math.random() * 2 + 0.8;
+          this.speedX = (Math.random() - 0.5) * 0.4;
+          this.speedY = (Math.random() - 0.5) * 0.4;
+          this.color = Math.random() > 0.55 ? 'rgba(0, 240, 255, 0.25)' : 'rgba(189, 0, 255, 0.25)';
+        }
+        update() {
+          this.x += this.speedX;
+          this.y += this.speedY;
+          if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+          if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+        }
+        draw() {
+          ctx.fillStyle = this.color;
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+      
+      const particleCount = Math.min(45, Math.floor(window.innerWidth / 30));
+      for (let i = 0; i < particleCount; i++) {
+        particles.push(new Particle());
+      }
+      
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.update();
+          p.draw();
+        });
+        requestAnimationFrame(animate);
+      }
+      animate();
+    }
+
+    // Scroll effect on Navbar
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Hamburger Toggle
+    const hamburger = document.getElementById('hamburger-btn');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close mobile nav when clicking a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // Scroll Reveal Engine
+    const reveals = document.querySelectorAll('.reveal');
+    function revealOnScroll() {
+      const windowHeight = window.innerHeight;
+      reveals.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const revealPoint = 80;
+        if (elementTop < windowHeight - revealPoint) {
+          element.classList.add('active');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+
+    // Mouse tilt effect on cards
+    const tiltCards = document.querySelectorAll('.luxury-card, .gear-item, .subpage-hero-card');
+    tiltCards.forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left - (rect.width/2);
+        const y = e.clientY - rect.top - (rect.height/2);
+        const tiltX = (y / rect.height) * 3;
+        const tiltY = -(x / rect.width) * 3;
+        card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(-3px)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+      });
+    });
+  </script>
+</body>
+</html>
